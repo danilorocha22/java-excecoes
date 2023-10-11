@@ -1,4 +1,6 @@
-import model.Produto;
+package _1_excecao_nao_checada;
+
+import _1_excecao_nao_checada.model.Produto;
 
 import java.util.Scanner;
 

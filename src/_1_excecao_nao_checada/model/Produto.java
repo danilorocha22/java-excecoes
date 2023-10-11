@@ -1,4 +1,4 @@
-package model;
+package _1_excecao_nao_checada.model;
 
 public class Produto {
     private final String nome;

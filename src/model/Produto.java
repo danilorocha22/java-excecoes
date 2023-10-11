@@ -24,43 +24,47 @@ public class Produto {
         return ativo;
     }
 
-    public void setAtivo(boolean ativo) {
-        this.ativo = ativo;
-    }
-
     // Métodos
     public void adicionarEstoque(int quantidade) {
-        validarSituacaoProduto();
         validarQuantidade(quantidade);
+        validarSituacaoProduto();
         this.quantidadeEstoque += quantidade;
     }
 
     public void retirarEstoque(int quantidade) {
-        validarSituacaoProduto();
         validarQuantidade(quantidade);
+        validarSituacaoProduto();
         validarSaldoEstoque(quantidade);
         this.quantidadeEstoque -= quantidade;
     }
 
+    public void ativar() {
+        this.ativo = true;
+    }
+
+    public void desativar() {
+        this.ativo = false;
+    }
+
     private void validarSaldoEstoque(int quantidade) {
         if (this.getQuantidadeEstoque() - quantidade < 0) {
-            throw new IllegalArgumentException(String.format("Quantidade em estoque insuficiente: %d%n",
+            throw new IllegalArgumentException(String.format("Quantidade atual em estoque é insuficiente: %d%n",
                     this.getQuantidadeEstoque()));
         }
     }
 
     private void validarSituacaoProduto() {
-        if (produtoInativo())
+        if (seInativo())
             throw new IllegalStateException(String.format("Produto inativo: %s%n", this.getNome()));
+    }
+
+    private boolean seInativo() {
+        return !isAtivo();
     }
 
     private void validarQuantidade(int quantidade) {
         if (quantidade <= 0)
-            throw new IllegalArgumentException("Informe uma quantidade maior que zero");
-    }
-
-    private boolean produtoInativo() {
-        return !isAtivo();
+            throw new IllegalArgumentException(String.format("Informe uma quantidade maior que zero %n"));
     }
 
     @Override

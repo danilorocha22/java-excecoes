@@ -1,7 +1,7 @@
 package exercicio;
 
 import exercicio.banco.ContaCorrente;
-import exercicio.exception.ContaInativaException;
+import exercicio.exception.OperacaoBancariaException;
 
 public class Principal1 {
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Principal1 {
         try {
             conta1.depositar(10);
             System.out.printf("Saldo da conta 1: R$ %.2f%n", conta1.getSaldo());
-        } catch (ContaInativaException | IllegalArgumentException e) {
+        } catch (IllegalArgumentException | OperacaoBancariaException e) {
             System.out.println("Erro - "+ e.getMessage());
         }
 

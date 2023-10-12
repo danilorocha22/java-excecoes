@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88de321f-7321-4c8f-ba15-b0383f7b3099" name="Changes" comment="Atualizando projeto">
-      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/exception/CadastroAnuncioException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/service/ServicoCadastroAnuncio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/banco/ContaCorrente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/exception/ContaInativaException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicio/exception/SaldoInsuficienteException.java" afterDir="false" />
+    <list default="true" id="88de321f-7321-4c8f-ba15-b0383f7b3099" name="Changes" comment="Atualização das exceções não checadas">
+      <change afterPath="$PROJECT_DIR$/src/exercicio/exception/OperacaoBancariaException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_excecao_nao_checada/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_1_excecao_nao_checada/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/model/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/Principal1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/Principal1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/Principal2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/Principal2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/Principal3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/Principal3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/banco/ContaCorrente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/banco/ContaCorrente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/exception/ContaInativaException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/exception/ContaInativaException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicio/exception/SaldoInsuficienteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicio/exception/SaldoInsuficienteException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +98,7 @@
       <recent name="_3_excecao_customizada.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Principal3">
+  <component name="RunManager" selected="Application.Principal1">
     <configuration name="Principal1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercicio.Principal1" />
       <module name="java-excecoes" />
@@ -172,9 +166,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal1" />
         <item itemvalue="Application.Principal3" />
         <item itemvalue="Application.Principal2" />
-        <item itemvalue="Application.Principal1" />
         <item itemvalue="Application._1_excecao_nao_checada.exemplo2.Main" />
         <item itemvalue="Application._2_excecao_checada.exemplo1.Main" />
       </list>
@@ -193,7 +187,7 @@
       <workItem from="1697022821598" duration="9829000" />
       <workItem from="1697047499883" duration="6589000" />
       <workItem from="1697116596381" duration="750000" />
-      <workItem from="1697117745067" duration="17264000" />
+      <workItem from="1697117745067" duration="18800000" />
     </task>
     <task id="LOCAL-00001" summary="Lançando exceções">
       <option name="closed" value="true" />
@@ -235,7 +229,23 @@
       <option name="project" value="LOCAL" />
       <updated>1697135012671</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Resolução de exercício">
+      <option name="closed" value="true" />
+      <created>1697148232386</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697148232386</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Atualização das exceções não checadas">
+      <option name="closed" value="true" />
+      <created>1697148265328</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697148265328</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +269,9 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="implementando tratamento de erros e múltiplos blocos catch" />
     <MESSAGE value="Atualizando projeto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando projeto" />
+    <MESSAGE value="Resolução de exercício" />
+    <MESSAGE value="Atualização das exceções não checadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização das exceções não checadas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

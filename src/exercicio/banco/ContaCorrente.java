@@ -1,7 +1,10 @@
 package exercicio.banco;
 
 import exercicio.exception.ContaInativaException;
+import exercicio.exception.OperacaoBancariaException;
 import exercicio.exception.SaldoInsuficienteException;
+
+import java.util.Objects;
 
 public class ContaCorrente {
     private final String numero;
@@ -36,32 +39,35 @@ public class ContaCorrente {
         this.ativa = false;
     }
 
-    public void sacar(double valor) throws SaldoInsuficienteException, ContaInativaException {
+    public void sacar(double valor) throws OperacaoBancariaException {
         this.validarValorInformado(valor);
-        this.validarSeContaAtiva();
+        this.validarSeContaAtivada();
         this.validarSaldoConta(valor);
         this.saldo -= valor;
     }
 
-    public void depositar(double valor) throws ContaInativaException {
+    public void depositar(double valor) throws OperacaoBancariaException {
         this.validarValorInformado(valor);
-        this.validarSeContaAtiva();
+        this.validarSeContaAtivada();
         this.saldo += valor;
     }
 
-    public void transferir(ContaCorrente contaDestino, double valor) throws ContaInativaException, SaldoInsuficienteException {
-        this.validarSeContaAtiva();
-        contaDestino.validarSeContaAtiva();
+    public void transferir(ContaCorrente contaDestino, double valor) throws OperacaoBancariaException {
+        Objects.requireNonNull(contaDestino, "Informe uma conta válida para transferir o dinheiro");
+        this.validarSeContaAtivada();
+        contaDestino.validarSeContaAtivada();
         this.sacar(valor);
         contaDestino.depositar(valor);
     }
 
     private void validarValorInformado(double valor) {
-        if (valor <= 0) throw new IllegalArgumentException("Informe um valor maior que 0.");
+        if (valor <= 0)
+            throw new IllegalArgumentException("Informe um valor maior que 0.");
     }
 
-    private void validarSeContaAtiva() throws ContaInativaException {
-        if (isInativa()) throw new ContaInativaException("Conta não está ativada: conta nº " + this.getNumero());
+    private void validarSeContaAtivada() throws ContaInativaException {
+        if (isInativa())
+            throw new ContaInativaException("Conta não está ativada: conta nº " + this.getNumero());
     }
 
     private void validarSaldoConta(double valor) throws SaldoInsuficienteException {

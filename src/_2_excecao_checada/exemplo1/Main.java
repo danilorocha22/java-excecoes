@@ -1,4 +1,4 @@
-package _2_excecao_checada;
+package _2_excecao_checada.exemplo1;
 
 import java.io.IOException;
 import java.nio.file.Files;

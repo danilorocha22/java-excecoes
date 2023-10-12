@@ -1,7 +1,7 @@
-package _3_excecao_customizada.model;
+package _2_excecao_checada.exemplo2.model;
 
-import _3_excecao_customizada.exception.ProdutoInativoException;
-import _3_excecao_customizada.exception.ProdutoSemEstoqueException;
+import _2_excecao_checada.exemplo2.exception.ProdutoInativoException;
+import _2_excecao_checada.exemplo2.exception.ProdutoSemEstoqueException;
 
 public class Produto {
     private final String nome;
@@ -28,13 +28,13 @@ public class Produto {
     }
 
     // Métodos
-    public void adicionarEstoque(int quantidade) {
+    public void adicionarEstoque(int quantidade) throws ProdutoInativoException {
         validarQuantidade(quantidade);
         validarSituacaoProduto();
         this.quantidadeEstoque += quantidade;
     }
 
-    public void retirarEstoque(int quantidade) {
+    public void retirarEstoque(int quantidade) throws ProdutoSemEstoqueException, ProdutoInativoException {
         validarQuantidade(quantidade);
         validarSituacaoProduto();
         validarSaldoEstoque(quantidade);
@@ -49,14 +49,14 @@ public class Produto {
         this.ativo = false;
     }
 
-    private void validarSaldoEstoque(int quantidade) {
+    private void validarSaldoEstoque(int quantidade) throws ProdutoSemEstoqueException  {
         if (this.getQuantidadeEstoque() - quantidade < 0) {
             throw new ProdutoSemEstoqueException("quantidade atual em estoque insuficiente", this.getQuantidadeEstoque(),
                     quantidade);
         }
     }
 
-    private void validarSituacaoProduto() {
+    private void validarSituacaoProduto() throws ProdutoInativoException {
         if (seInativo())
             throw new ProdutoInativoException(String.format("Produto inativo: %s%n", this.getNome()));
     }

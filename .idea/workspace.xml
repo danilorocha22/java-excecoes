@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88de321f-7321-4c8f-ba15-b0383f7b3099" name="Changes" comment=".">
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/exception/BaixaEstoqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/exception/ProdutoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/exception/ProdutoInativoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/exception/ProdutoSemEstoqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo2/model/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/_3_excecao_customizada/exception/ProdutoSemEstoqueException.java" afterDir="false" />
+    <list default="true" id="88de321f-7321-4c8f-ba15-b0383f7b3099" name="Changes" comment="Atualizando projeto">
+      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/exception/CadastroAnuncioException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo2/service/ServicoCadastroAnuncio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/Principal3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/banco/ContaCorrente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/exception/ContaInativaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicio/exception/SaldoInsuficienteException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_2_excecao_checada/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_3_excecao_customizada/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3_excecao_customizada/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_3_excecao_customizada/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_3_excecao_customizada/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_excecao_nao_checada/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_1_excecao_nao_checada/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/model/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/_2_excecao_checada/exemplo1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,14 +99,60 @@
       <recent name="$PROJECT_DIR$/src/_3_excecao_customizada" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exercicio" />
       <recent name="_2_excecao_checada.exemplo2.exception" />
       <recent name="_3_excecao_customizada.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._2_excecao_checada.exemplo2.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_excecao_nao_checada.Main" />
+  <component name="RunManager" selected="Application.Principal3">
+    <configuration name="Principal1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicio.Principal1" />
       <module name="java-excecoes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Principal2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicio.Principal2" />
+      <module name="java-excecoes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Principal3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercicio.Principal3" />
+      <module name="java-excecoes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercicio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1_excecao_nao_checada.exemplo2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_excecao_nao_checada.exemplo2.Main" />
+      <module name="java-excecoes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_1_excecao_nao_checada.exemplo2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,38 +170,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_2_excecao_checada.exemplo2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_excecao_checada.exemplo2.Main" />
-      <module name="java-excecoes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2_excecao_checada.exemplo2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_3_excecao_customizada.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_3_excecao_customizada.Main" />
-      <module name="java-excecoes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_3_excecao_customizada.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._2_excecao_checada.exemplo2.Main" />
-        <item itemvalue="Application._3_excecao_customizada.Main" />
+        <item itemvalue="Application.Principal3" />
+        <item itemvalue="Application.Principal2" />
+        <item itemvalue="Application.Principal1" />
+        <item itemvalue="Application._1_excecao_nao_checada.exemplo2.Main" />
         <item itemvalue="Application._2_excecao_checada.exemplo1.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +193,7 @@
       <workItem from="1697022821598" duration="9829000" />
       <workItem from="1697047499883" duration="6589000" />
       <workItem from="1697116596381" duration="750000" />
-      <workItem from="1697117745067" duration="8598000" />
+      <workItem from="1697117745067" duration="17264000" />
     </task>
     <task id="LOCAL-00001" summary="Lançando exceções">
       <option name="closed" value="true" />
@@ -203,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697033280473</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Atualizando projeto">
+      <option name="closed" value="true" />
+      <created>1697135012665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697135012671</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,22 +258,26 @@
     <MESSAGE value="Lançando e tratando exceções" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="implementando tratamento de erros e múltiplos blocos catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementando tratamento de erros e múltiplos blocos catch" />
+    <MESSAGE value="Atualizando projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando projeto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_1_excecao_nao_checada/model/Produto.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/model/Produto.java</url>
           <line>56</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/_1_excecao_nao_checada/model/Produto.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/_1_excecao_nao_checada/exemplo1/model/Produto.java</url>
           <line>50</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
